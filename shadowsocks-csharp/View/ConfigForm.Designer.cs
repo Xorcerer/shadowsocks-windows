@@ -461,17 +461,17 @@
             this.tableLayoutPanel4.Size = new System.Drawing.Size(166, 64);
             this.tableLayoutPanel4.TabIndex = 8;
             // 
-            // Duplicate
+            // DuplicateButton
             // 
             this.DuplicateButton.Dock = System.Windows.Forms.DockStyle.Left;
             this.DuplicateButton.Location = new System.Drawing.Point(0, 38);
             this.DuplicateButton.Margin = new System.Windows.Forms.Padding(0, 6, 3, 3);
-            this.DuplicateButton.Name = "Duplicate";
+            this.DuplicateButton.Name = "DuplicateButton";
             this.DuplicateButton.Size = new System.Drawing.Size(80, 23);
             this.DuplicateButton.TabIndex = 10;
             this.DuplicateButton.Text = "Dupli&cate";
             this.DuplicateButton.UseVisualStyleBackColor = true;
-            this.DuplicateButton.Click += new System.EventHandler(this.Duplicate_Click);
+            this.DuplicateButton.Click += new System.EventHandler(this.DuplicateButton_Click);
             // 
             // ConfigForm
             // 

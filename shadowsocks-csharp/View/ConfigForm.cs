@@ -211,6 +211,19 @@ namespace Shadowsocks.View
             _lastSelectedIndex = ServersListBox.SelectedIndex;
         }
 
+        private void DuplicateButton_Click( object sender, EventArgs e )
+        {
+            if (!SaveOldSelectedServer())
+            {
+                return;
+            }
+            Server currServer = _modifiedConfiguration.configs[_lastSelectedIndex];
+            _modifiedConfiguration.configs.Add(currServer);
+            LoadConfiguration(_modifiedConfiguration);
+            ServersListBox.SelectedIndex = _modifiedConfiguration.configs.Count - 1;
+            _lastSelectedIndex = ServersListBox.SelectedIndex;
+        }
+
         private void DeleteButton_Click(object sender, EventArgs e)
         {
             _lastSelectedIndex = ServersListBox.SelectedIndex;
